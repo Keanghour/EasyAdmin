@@ -5,9 +5,9 @@
                 <i class="pi pi-align-justify"></i>
             </div>
 
-            <div class="py-2">
+            <!-- <div class="py-2">
                 <InputText v-model="value" class="h-[30px]" placeholder="Search..." />
-            </div>
+            </div> -->
 
             <div class="flex space-x-3 items-center justify-center px-3">
                 <div class="text-md">Admin</div>
@@ -41,7 +41,7 @@ export default {
                     label: 'Logout',
                     icon: 'pi pi-times',
                     command: () => {
-                        this.$toast.add({ severity: 'success', summary: 'Deleted', detail: 'Delete successful' });
+                        this.$router.push('auth/login');
                     }
                 }
             ]

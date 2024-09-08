@@ -1,5 +1,5 @@
 <template>
-    <div class="h-screen bg-gray-800 sidebar"
+    <div class="w-screen bg-gray-800 sidebar"
         :class="{'side-bar-visible': dataOpenSideBar, 'side-bar-close': !dataOpenSideBar}">
         <div class="bg-gray-700 h-[50px] flex items-center justify-center">
             <div class="text-xl font-bold text-center text-white" v-show="dataOpenSideBar">Admin</div>
